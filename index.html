@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedanta | Vedantasharing.com</title>
+    <link rel="stylesheet" href="css1/style.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1450px)" href="css/phone.css"> -->
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.jpeg" alt="Loading">
+        </div>
+        
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#gallery">Gallery</a></li>
+            <li class="item"><a href="#about-section">About</a></li>
+            <li class="item"><a href="#">Contact</a></li>
+            
+        </ul>
+
+        <div class="right">
+            <button class="btn">Sign in</button>
+        </div>
+
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to</h1><h1>Vedanta Group</h1>
+            <div class="formgroup">
+            <div class="formgroup">
+                <label for="username">Email or Phone</label>
+                <input type="email" name="myEmail" id="username">
+            </div>
+            <div class="formgroup">
+                <label for="password">Password</label>
+                <input type="password" name="myPassword" id="password">
+            </div>
+            <div><button class="btn1" onclick="func()">Log In</button></div>
+            <div><button class="btn1">Sign Up</button></div>
+        </form>
+    </section>
+
+    <section class="gallery-container">
+        <h1 class="h-primary center">Our Gallery</h1>
+        <div id="gallery">
+            <div class="box">
+                <img src="img/bg1.jpg" alt="">
+            </div>
+            
+            <div class="box">
+                <img src="img/img3.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="img/img4.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="img/img5.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="img/img6.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about-section">
+        <h1 class="h-primary center">Building the Nation</h1>
+        <div id="about-item">
+            <p>At Vedanta, we are focused on nation building through sustainable growth while setting high standards of corporate governance and transparency. At our core is a mission to boost manufacturing, reduce imports and make India ‘atmanirbhar’ in natural resources. Over the years, we have raised $35 billion overseas and invested into the natural resources sector in the country. Our journey has been synonymous with the India growth story and we have contributed ₹2,740 billion to the exchequer in the last 10 years. We account for ~1.4 per cent of India’s GDP.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; WWW.Vedantasharng.com. All rights reserved
+        </div>
+    </footer>
+    <script>
+        function func(){
+            var email = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            if(email == 'skashish489@gmail.com' && pass == '123456'){
+                alert("sucess full ! ")
+                window.location.assign("index1.html")
+            }
+            else{
+                alert("wrong entry invalid")
+            }
+        }   
+    </script>
+</body>
+
+</html>
